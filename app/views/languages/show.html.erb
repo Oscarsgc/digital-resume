@@ -1,0 +1,20 @@
+<br><br><br><br><br><br>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @language.name %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @language.level %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @language.rating %>
+</p>
+
+<%= link_to 'Edit', edit_language_path(@language) %> |
+<%= link_to 'Back', languages_path %>

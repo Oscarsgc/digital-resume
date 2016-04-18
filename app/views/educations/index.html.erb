@@ -1,0 +1,38 @@
+<br><br><br><br><br><br>
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Educations</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Start</th>
+    <th>Finish</th>
+    <th>Currently</th>
+    <th>Description</th>
+    <th>Location</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @educations.each do |education| %>
+      <tr>
+        <td><%= education.title %></td>
+        <td><%= education.start %></td>
+        <td><%= education.finish %></td>
+        <td><%= education.currently %></td>
+        <td><%= education.description %></td>
+        <td><%= education.location %></td>
+        <td><%= link_to 'Show', education %></td>
+        <td><%= link_to 'Edit', edit_education_path(education) %></td>
+        <td><%= link_to 'Destroy', education, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Education', new_education_path %>

@@ -1,0 +1,35 @@
+<br><br><br><br><br><br>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @work.title %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @work.start %>
+</p>
+
+<p>
+  <strong>Finish:</strong>
+  <%= @work.finish %>
+</p>
+
+<p>
+  <strong>Currently:</strong>
+  <%= @work.currently %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @work.description %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @work.location %>
+</p>
+
+<%= link_to 'Edit', edit_work_path(@work) %> |
+<%= link_to 'Back', works_path %>
