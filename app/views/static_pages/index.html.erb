@@ -30,7 +30,7 @@
           <div class="col-md-12 text-center">
             <h1>
               Oscar González</h1>
-            <h3>
+            <h3 class="carousel-small-text">
               Interactive Resume
             </h3>
           </div>
@@ -50,11 +50,20 @@
       <div class="col-md-4">
         <h3>About me</h3>
         <p>
-          biography
+          I'm a responsible person, who likes to work under pressure. I have experience developing web systems, web
+          pages and desktop systems.
+        </p>
+        <p>
+          I have no problems solving any difficulty arising me, it doesn't matter if is a design, programming or testing
+          task, be sure I'm gonna solve it.
+        </p>
+        <p>
+          I like to participate in seminars and lectures and I'm always interested in learn new skills, whether in
+          technology or research area.
         </p>
       </div>
       <div class="col-md-4 text-center">
-        <img src="..." alt="Oscar González" width="246" height="246"/>
+        <img class="img-circle" src="/assets/profile.jpg" alt="Oscar González" width="246" height="246"/>
       </div>
       <div class="col-md-4">
         <h3>Details:</h3>
@@ -98,25 +107,28 @@
         <div class="experiences">
           <div class="experience row">
             <div class="col-md-4">
-              <h4><%= education.title %></h4>
+              <h4 class="education-title"><%= education.title %></h4>
               <p class="experience-period">
-                <%= education.start + '-' +
+                <%= education.start.year.to_s + '-' +
                         if education.currently
                           'current'
                         else
-                          education.finish
+                          education.finish.year.to_s
                         end %>
               </p>
             </div>
             <div class="col-md-8">
               <p>
-                <strong><%= education.description %></strong>
-				    <span class="experience-details">
-              <span class="location">
-						    <span class="glyphicon glyphicon-map-marker"></span>
-                <% education.location %>
-              </span>
-				    </span>
+                <strong><%= education.degree %></strong>
+                <span class="hidden-phone">
+        					<%= education.description %>
+				        </span>
+				        <span class="experience-details">
+                  <span class="location">
+						        <span class="glyphicon glyphicon-map-marker"></span>
+                    <%= education.location %>
+                  </span>
+                </span>
               </p>
             </div>
           </div>
@@ -130,24 +142,26 @@
               <h4>
                 <%= work.title %>></h4>
               <p class="experience-period">
-                <%= work.start + '-' +
+                <%= work.start.year.to_s + '-' +
                         if work.currently
                           'current'
                         else
-                          work.finish
+                          work.finish.year.to_s
                         end %>
               </p>
             </div>
             <div class="col-md-8">
               <p>
-                <strong><%= work.description %></strong>
-
-				<span class="experience-details">
-					<span class="location">
-						<span class="glyphicon glyphicon-map-marker"></span>
-            <%= work.location %>
-					</span>
-				</span>
+                <strong><%= work.role %></strong>
+                <span class="hidden-phone">
+					        <%= work.description %>
+				        </span>
+				        <span class="experience-details">
+					        <span class="location">
+						        <span class="glyphicon glyphicon-map-marker"></span>
+                    <%= work.location %>
+					        </span>
+				        </span>
               </p>
             </div>
           </div>
@@ -172,7 +186,10 @@
               <li>
                 <span class="ability-title"><%= ability.name %></span>
 				        <span class="ability-score">
-                 <%= ability.rating %>
+                  &nbsp;
+                  <% for i in 1..ability.rating %>
+                        <%= '<i class="fa fa-star" aria-hidden="true"></i>'.html_safe %>
+                  <% end %>
 				        </span>
               </li>
           <% end %>
@@ -197,7 +214,10 @@
               <li>
                 <span class="ability-title"><%= language.name + " " +language.level %></span>
 				            <span class="ability-score">
-                      <%= language.rating %>
+                        &nbsp;
+                      <% for i in 1..language.rating %>
+                        <%= '<i class="fa fa-star" aria-hidden="true"></i>'.html_safe %>
+                  <% end %>
                     </span>
               </li>
           <% end %>
@@ -218,7 +238,10 @@
                       <%= tool.name + ' ' + tool.years_experience %>
                     </span>
 				            <span class="ability-score">
-                      <%= tool.rating %>
+                        &nbsp;
+                      <% for i in 1..tool.rating %>
+                        <%= '<i class="fa fa-star" aria-hidden="true"></i>'.html_safe %>
+                  <% end %>
                     </span>
               </li>
           <% end %>
@@ -267,16 +290,24 @@
         <ul class="no-bullets">
           <li>
             <a href="https://twitter.com/Oscar_sgc" target="_blank">
-              <span class="icon icon-twitter"></span>
+              <span class="fa fa-twitter" aria-hidden="true"></span>
               @Oscar_sgc
             </a>
           </li>
           <li>
-            <a href="https://bo.linkedin.com/pub/oscar-gonz%C3%A1lez/aa/229/422" style="text-decoration:none;">
-              <span style="font: 80% Arial,sans-serif; color:#0783B6;">
-                <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" style="vertical-align:middle;" border="0">
+            <a href="https://bo.linkedin.com/in/ogonzalezc" style="text-decoration:none;">
+              <span>
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                 &nbsp;Oscar González
               </span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto: oscar_sgc@icloud.com">
+              <span class="fa fa-envelope" aria-hidden="true"></span>
+					<span>
+						oscar_sgc@icloud.com
+					</span>
             </a>
           </li>
         </ul>

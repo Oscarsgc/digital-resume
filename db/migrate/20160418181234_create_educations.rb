@@ -5,6 +5,7 @@ class CreateEducations < ActiveRecord::Migration
       t.date :start
       t.date :finish
       t.boolean :currently
+      t.string :degree
       t.text :description
       t.string :location
 

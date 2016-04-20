@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20160418193718) do
     t.date     "start"
     t.date     "finish"
     t.boolean  "currently"
+    t.string   "degree"
     t.text     "description"
     t.string   "location"
     t.datetime "created_at",  null: false
@@ -82,6 +83,7 @@ ActiveRecord::Schema.define(version: 20160418193718) do
     t.date     "start"
     t.date     "finish"
     t.boolean  "currently"
+    t.string   "role"
     t.text     "description"
     t.string   "location"
     t.datetime "created_at",  null: false

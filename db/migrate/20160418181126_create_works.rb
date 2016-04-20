@@ -5,6 +5,7 @@ class CreateWorks < ActiveRecord::Migration
       t.date :start
       t.date :finish
       t.boolean :currently
+      t.string :role
       t.text :description
       t.string :location
 

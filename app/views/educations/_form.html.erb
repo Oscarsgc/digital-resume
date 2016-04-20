@@ -17,15 +17,19 @@
     </div>
     <div class="field">
       <%= f.label :start %><br>
-      <%= f.date_select :start %>
+      <%= f.date_select :start, :start_year=>1992 %>
     </div>
     <div class="field">
       <%= f.label :finish %><br>
-      <%= f.date_select :finish %>
+      <%= f.date_select :finish, :start_year=>2000  %>
     </div>
     <div class="field">
       <%= f.label :currently %><br>
       <%= f.check_box :currently %>
+    </div>
+    <div class="field">
+      <%= f.label :degree %><br>
+      <%= f.text_field :degree %>
     </div>
     <div class="field">
       <%= f.label :description %><br>
