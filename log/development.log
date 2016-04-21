@@ -20164,3 +20164,369 @@ Started GET "/assets/bootstrap/glyphicons-halflings-regular-a26394f7ede100ca118e
 
 
 Started GET "/assets/fontawesome-webfont-c812ddc9e475d3e65d68a6b3b589ce598a2a5babb7afc55477d59215c4a38a40.woff?v=4.5.0" for ::1 at 2016-04-21 17:10:27 -0400
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateWorks (20160418181126)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "works" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "start" date, "finish" date, "currently" boolean, "role" varchar, "description" text, "location" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160418181126"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateEducations (20160418181234)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "educations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "start" date, "finish" date, "currently" boolean, "degree" varchar, "description" text, "location" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160418181234"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateAbilities (20160418181452)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "abilities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "rating" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160418181452"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateLanguages (20160418181600)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "languages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "level" varchar, "rating" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160418181600"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateTools (20160418181643)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "tools" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "years_experience" varchar, "rating" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160418181643"]]
+  [1m[35m (0.5ms)[0m  commit transaction
+Migrating to CreateProjects (20160418182341)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "link" varchar, "url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160418182341"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to AddAttachmentPhotoToProjects (20160418182527)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "projects" ADD "photo_file_name" varchar
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "projects" ADD "photo_content_type" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "projects" ADD "photo_file_size" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "projects" ADD "photo_updated_at" datetime[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160418182527"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Migrating to DeviseCreateUsers (20160418193718)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  CREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160418193718"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'oscar_sgc@hotmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "oscar_sgc@hotmail.com"], ["encrypted_password", "$2a$10$Xes.CXmht.bEacKyBaZgjOkXDQNc23fkbrkZLpAPd.Zi7JCAnxIhK"], ["created_at", "2016-04-21 21:15:06.567715"], ["updated_at", "2016-04-21 21:15:06.567715"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2016-04-21 17:15:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  [1m[35mAbility Load (0.1ms)[0m  SELECT "abilities".* FROM "abilities"
+  [1m[36mEducation Load (0.1ms)[0m  [1mSELECT "educations".* FROM "educations"[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT "languages".* FROM "languages"
+DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in paperclip 5. Please consider upgrading to AWS 2 before upgrading paperclip. (called from <class:Project> at /Users/oscar_sgc/RubymineProjects/myBlog/app/models/project.rb:2)
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mTool Load (0.1ms)[0m  SELECT "tools".* FROM "tools"
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works"[0m
+  Rendered static_pages/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 2023ms (Views: 1998.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/font-awesome.self-c1a7a80b6536c3397a1a212c9bd22298ae69260ee343d00b60d7f41fa54a59a8.css?body=1" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/assets/static_pages.self-8b6869e6fe1bdcd6992757d65dfdd0022296e7ac661cb1754fa65efe1c02e374.css?body=1" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/assets/Slide1.jpg" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/assets/Slide2.jpg" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/assets/Slide3.jpg" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/assets/fontawesome-webfont-c812ddc9e475d3e65d68a6b3b589ce598a2a5babb7afc55477d59215c4a38a40.woff?v=4.5.0" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff" for ::1 at 2016-04-21 17:15:20 -0400
+
+
+Started GET "/projects/new" for ::1 at 2016-04-21 17:15:26 -0400
+Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 401 Unauthorized in 24ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-04-21 17:15:26 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/devise-3.5.5/app/views/devise/shared/_links.html.erb (10.6ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/devise-3.5.5/app/views/devise/sessions/new.html.erb within layouts/application (32.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 72ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects/new" for ::1 at 2016-04-21 17:15:28 -0400
+Processing by ProjectsController#new as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-04-21 17:15:28 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/devise-3.5.5/app/views/devise/shared/_links.html.erb (3.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/devise-3.5.5/app/views/devise/sessions/new.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-04-21 17:15:36 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yZ0Ndn123S8vCsp6ex1nyIAypurwCsN6e0jvV9WmbhaFdLMjXsa4x5QHfXholkuC6Y0gBG7SToknYu6cm7KVBQ==", "user"=>{"email"=>"oscar_sgc@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "oscar_sgc@hotmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-04-21 21:15:36.558599"], ["current_sign_in_at", "2016-04-21 21:15:36.558599"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-04-21 21:15:36.559527"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/projects/new
+Completed 302 Found in 100ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/projects/new" for ::1 at 2016-04-21 17:15:36 -0400
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered projects/_form.html.erb (6.4ms)
+  Rendered projects/new.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 64ms (Views: 54.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/projects" for ::1 at 2016-04-21 17:15:48 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9Dnyu6N5ZrgZIB9fuf1JLF3zeeh4svzNy9bdanSrWQsBSaH8gSvZGNK2Gl0EopL8dcVdKwehX+H9FXp4/MPaqQ==", "project"=>{"name"=>"test", "description"=>"None", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007fb84b610700 @tempfile=#<Tempfile:/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/RackMultipart20160421-3205-kzt0px.JPG>, @original_filename="IMG_0314.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"IMG_0314.JPG\"\r\nContent-Type: image/jpeg\r\n">, "link"=>"none"}, "commit"=>"Create Project"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: file -b --mime '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/16cce6e656f23f83b5214a62a5a1abbc20160421-3205-1ajngxe.JPG'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/16cce6e656f23f83b5214a62a5a1abbc20160421-3205-1pgj5xs.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/16cce6e656f23f83b5214a62a5a1abbc20160421-3205-1pgj5xs.JPG[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/16cce6e656f23f83b5214a62a5a1abbc20160421-3205-1pgj5xs.JPG[0]' -auto-orient -resize "300x300>" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/99e8d0c3c1072f806ae3562b7515173720160421-3205-n97ghm'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/16cce6e656f23f83b5214a62a5a1abbc20160421-3205-1pgj5xs.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/16cce6e656f23f83b5214a62a5a1abbc20160421-3205-1pgj5xs.JPG[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/16cce6e656f23f83b5214a62a5a1abbc20160421-3205-1pgj5xs.JPG[0]' -auto-orient -resize "200x200" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/99e8d0c3c1072f806ae3562b7515173720160421-3205-1jct7bt'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/16cce6e656f23f83b5214a62a5a1abbc20160421-3205-1pgj5xs.JPG[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/16cce6e656f23f83b5214a62a5a1abbc20160421-3205-1pgj5xs.JPG[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/16cce6e656f23f83b5214a62a5a1abbc20160421-3205-1pgj5xs.JPG[0]' -auto-orient -resize "100x100>" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/99e8d0c3c1072f806ae3562b7515173720160421-3205-xwt1bt'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/16cce6e656f23f83b5214a62a5a1abbc20160421-3205-18ldm7l.JPG'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "link", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "test"], ["description", "None"], ["link", "none"], ["photo_file_name", "IMG_0314.JPG"], ["photo_content_type", "image/jpeg"], ["photo_file_size", 4608309], ["photo_updated_at", "2016-04-21 21:15:48.689921"], ["created_at", "2016-04-21 21:15:50.228070"], ["updated_at", "2016-04-21 21:15:50.228070"]]
+[paperclip] saving /projects/photos/000/000/001/original/IMG_0314.JPG
+[AWS S3 200 73.585122 0 retries] put_object(:acl=>:public_read,:bucket_name=>"oscargonzalezblog",:content_length=>4608309,:content_type=>"image/jpeg",:data=>Paperclip::UploadedFileAdapter: IMG_0314.JPG,:key=>"projects/photos/000/000/001/original/IMG_0314.JPG")  
+
+[paperclip] saving /projects/photos/000/000/001/medium/IMG_0314.JPG
+[AWS S3 200 3.098421 0 retries] put_object(:acl=>:public_read,:bucket_name=>"oscargonzalezblog",:content_length=>120724,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 99e8d0c3c1072f806ae3562b7515173720160421-3205-n97ghm,:key=>"projects/photos/000/000/001/medium/IMG_0314.JPG")  
+
+[paperclip] saving /projects/photos/000/000/001/square/IMG_0314.JPG
+[AWS S3 200 1.178297 0 retries] put_object(:acl=>:public_read,:bucket_name=>"oscargonzalezblog",:content_length=>57522,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 99e8d0c3c1072f806ae3562b7515173720160421-3205-1jct7bt,:key=>"projects/photos/000/000/001/square/IMG_0314.JPG")  
+
+[paperclip] saving /projects/photos/000/000/001/thumb/IMG_0314.JPG
+[AWS S3 200 0.723754 0 retries] put_object(:acl=>:public_read,:bucket_name=>"oscargonzalezblog",:content_length=>16516,:content_type=>"image/png",:data=>Paperclip::FileAdapter: 99e8d0c3c1072f806ae3562b7515173720160421-3205-xwt1bt,:key=>"projects/photos/000/000/001/thumb/IMG_0314.JPG")  
+
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/projects/1
+Completed 302 Found in 80178ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/projects/1" for ::1 at 2016-04-21 17:17:08 -0400
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered projects/show.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 55ms (Views: 50.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-21 17:17:30 -0400
+Processing by StaticPagesController#index as HTML
+  [1m[35mAbility Load (0.1ms)[0m  SELECT "abilities".* FROM "abilities"
+  [1m[36mEducation Load (0.1ms)[0m  [1mSELECT "educations".* FROM "educations"[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT "languages".* FROM "languages"
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mTool Load (0.2ms)[0m  SELECT "tools".* FROM "tools"
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works"[0m
+  Rendered static_pages/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/Slide1.jpg" for ::1 at 2016-04-21 17:17:30 -0400
+
+
+Started GET "/assets/Slide2.jpg" for ::1 at 2016-04-21 17:17:30 -0400
+
+
+Started GET "/assets/Slide3.jpg" for ::1 at 2016-04-21 17:17:30 -0400
+
+
+Started GET "/" for ::1 at 2016-04-21 17:17:51 -0400
+Processing by StaticPagesController#index as HTML
+  [1m[35mAbility Load (0.1ms)[0m  SELECT "abilities".* FROM "abilities"
+  [1m[36mEducation Load (0.3ms)[0m  [1mSELECT "educations".* FROM "educations"[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT "languages".* FROM "languages"
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mTool Load (0.1ms)[0m  SELECT "tools".* FROM "tools"
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works"[0m
+  Rendered static_pages/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1671ms (Views: 1667.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/font-awesome.self-c1a7a80b6536c3397a1a212c9bd22298ae69260ee343d00b60d7f41fa54a59a8.css?body=1" for ::1 at 2016-04-21 17:17:53 -0400
+
+
+Started GET "/assets/static_pages.self-18da2c4406c16f962c113c934115ef8a101b256bdfde212c9483df28da2bdef3.css?body=1" for ::1 at 2016-04-21 17:17:53 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-04-21 17:17:53 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-21 17:17:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 17:17:53 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 17:17:53 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-21 17:17:53 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-04-21 17:17:53 -0400
+
+
+Started GET "/assets/Slide2.jpg" for ::1 at 2016-04-21 17:17:54 -0400
+
+
+Started GET "/assets/Slide3.jpg" for ::1 at 2016-04-21 17:17:54 -0400
+
+
+Started GET "/assets/Slide1.jpg" for ::1 at 2016-04-21 17:17:54 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff" for ::1 at 2016-04-21 17:17:54 -0400
+
+
+Started GET "/assets/fontawesome-webfont-c812ddc9e475d3e65d68a6b3b589ce598a2a5babb7afc55477d59215c4a38a40.woff?v=4.5.0" for ::1 at 2016-04-21 17:17:54 -0400
+
+
+Started GET "/" for ::1 at 2016-04-21 17:18:14 -0400
+Processing by StaticPagesController#index as HTML
+  [1m[35mAbility Load (0.1ms)[0m  SELECT "abilities".* FROM "abilities"
+  [1m[36mEducation Load (0.1ms)[0m  [1mSELECT "educations".* FROM "educations"[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT "languages".* FROM "languages"
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mTool Load (0.1ms)[0m  SELECT "tools".* FROM "tools"
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works"[0m
+  Rendered static_pages/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 60ms (Views: 56.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/font-awesome.self-c1a7a80b6536c3397a1a212c9bd22298ae69260ee343d00b60d7f41fa54a59a8.css?body=1" for ::1 at 2016-04-21 17:18:14 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-04-21 17:18:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-21 17:18:14 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-21 17:18:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-21 17:18:14 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-21 17:18:14 -0400
+
+
+Started GET "/assets/static_pages.self-42c0af8c394ce7c3b3c57f50dd55a68f22f94fa5da094dfc92ac3d0c34d04aed.css?body=1" for ::1 at 2016-04-21 17:18:14 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-04-21 17:18:14 -0400
+
+
+Started GET "/assets/Slide1.jpg" for ::1 at 2016-04-21 17:18:15 -0400
+
+
+Started GET "/assets/Slide3.jpg" for ::1 at 2016-04-21 17:18:15 -0400
+
+
+Started GET "/assets/Slide2.jpg" for ::1 at 2016-04-21 17:18:15 -0400
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-a26394f7ede100ca118eff2eda08596275a9839b959c226e15439557a5a80742.woff" for ::1 at 2016-04-21 17:18:15 -0400
+
+
+Started GET "/assets/fontawesome-webfont-c812ddc9e475d3e65d68a6b3b589ce598a2a5babb7afc55477d59215c4a38a40.woff?v=4.5.0" for ::1 at 2016-04-21 17:18:15 -0400
