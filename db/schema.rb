@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20160418193718) do
     t.string   "name"
     t.text     "description"
     t.string   "link"
+    t.string   "url"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.string   "photo_file_name"
