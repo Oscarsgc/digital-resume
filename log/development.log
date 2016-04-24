@@ -33529,3 +33529,29 @@ ArgumentError (missing required :bucket option):
   Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
   Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.6ms)
+DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in paperclip 5. Please consider upgrading to AWS 2 before upgrading paperclip. (called from <class:Project> at /Users/oscar_sgc/RubymineProjects/myBlog/app/models/project.rb:2)
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" LIMIT 1[0m
+  [1m[35mAbility Exists (0.1ms)[0m  SELECT  1 AS one FROM "abilities" LIMIT 1
+  [1m[36mEducation Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "educations" LIMIT 1[0m
+  [1m[35mLanguage Exists (0.1ms)[0m  SELECT  1 AS one FROM "languages" LIMIT 1
+  [1m[36mProject Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "projects" LIMIT 1[0m
+  [1m[35mTool Exists (0.1ms)[0m  SELECT  1 AS one FROM "tools" LIMIT 1
+  [1m[36mWork Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "works" LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" LIMIT 1 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "abilities"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "abilities"
+  [1m[36mAbility Load (0.1ms)[0m  [1mSELECT  "abilities".* FROM "abilities" LIMIT 14 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "educations"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "educations"[0m
+  [1m[35mEducation Load (0.1ms)[0m  SELECT  "educations".* FROM "educations" LIMIT 2 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "languages"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "languages"
+  [1m[36mLanguage Load (0.1ms)[0m  [1mSELECT  "languages".* FROM "languages" LIMIT 2 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tools"
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "tools"[0m
+  [1m[35mTool Load (0.1ms)[0m  SELECT  "tools".* FROM "tools" LIMIT 6 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "works"[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "works"
+  [1m[36mWork Load (0.2ms)[0m  [1mSELECT  "works".* FROM "works" LIMIT 5 OFFSET 0[0m
