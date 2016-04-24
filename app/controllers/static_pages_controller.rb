@@ -1,16 +1,16 @@
 class StaticPagesController < ApplicationController
   def index
     @abilities = Ability.all
-    @abilities.sort_by { |obj| obj.rating }
+    @abilities = @abilities.sort_by { |obj| obj.rating}.reverse!
     @educations = Education.all
-    @educations.sort_by { |obj| obj.finish.year }
+    @educations = @educations.sort_by { |obj| obj.finish.year }.reverse!
     @languages = Language.all
-    @languages.sort_by { |obj| obj.rating }
+    @languages = @languages.sort_by { |obj| obj.rating }.reverse!
     @projects = Project.all
-    @projects.sort_by { |obj| obj.created_at }
+    @projects = @projects.sort_by { |obj| obj.created_at }.reverse!
     @tools = Tool.all
-    @tools.sort_by { |obj| obj.rating }
+    @tools = @tools.sort_by { |obj| obj.rating }.reverse!
     @works = Work.all
-    @works.sort_by { |obj| obj.finish.year }
+    @works = @works.sort_by { |obj| obj.start.year }.reverse!
   end
 end
