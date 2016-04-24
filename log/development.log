@@ -33937,3 +33937,140 @@ Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a
 
 
 Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-04-24 11:33:10 -0400
+
+
+Started GET "/" for ::1 at 2016-04-24 11:35:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  [1m[35mAbility Load (0.5ms)[0m  SELECT "abilities".* FROM "abilities"
+  [1m[36mEducation Load (0.3ms)[0m  [1mSELECT "educations".* FROM "educations"[0m
+  [1m[35mLanguage Load (0.3ms)[0m  SELECT "languages".* FROM "languages"
+DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in paperclip 5. Please consider upgrading to AWS 2 before upgrading paperclip. (called from <class:Project> at /Users/oscar_sgc/RubymineProjects/myBlog/app/models/project.rb:2)
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mTool Load (0.3ms)[0m  SELECT "tools".* FROM "tools"
+  [1m[36mWork Load (0.5ms)[0m  [1mSELECT "works".* FROM "works"[0m
+  Rendered static_pages/index.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2087ms (Views: 2021.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/static_pages.self-0c253505fe657919fd9eb3fe10272f71c8aacd25e9ff6d22701394000a11429e.css?body=1" for ::1 at 2016-04-24 11:35:43 -0400
+
+
+Started GET "/" for ::1 at 2016-04-24 11:36:24 -0400
+Processing by StaticPagesController#index as HTML
+  [1m[35mAbility Load (0.4ms)[0m  SELECT "abilities".* FROM "abilities"
+  [1m[36mEducation Load (0.3ms)[0m  [1mSELECT "educations".* FROM "educations"[0m
+  [1m[35mLanguage Load (0.7ms)[0m  SELECT "languages".* FROM "languages"
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mTool Load (0.3ms)[0m  SELECT "tools".* FROM "tools"
+  [1m[36mWork Load (0.7ms)[0m  [1mSELECT "works".* FROM "works"[0m
+  Rendered static_pages/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 5889ms (Views: 5876.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/font-awesome.self-c1a7a80b6536c3397a1a212c9bd22298ae69260ee343d00b60d7f41fa54a59a8.css?body=1" for ::1 at 2016-04-24 11:36:30 -0400
+
+
+Started GET "/assets/static_pages.self-6d36836ac8a5a0b337fc8d40809a4abc8d57ef7b817b5ca4f5bf78027d839199.css?body=1" for ::1 at 2016-04-24 11:36:30 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-24 11:36:30 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-04-24 11:36:30 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-24 11:36:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-24 11:36:30 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-24 11:36:30 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-04-24 11:36:30 -0400
+
+
+Started GET "/" for ::1 at 2016-04-24 11:36:46 -0400
+Processing by StaticPagesController#index as HTML
+  [1m[35mAbility Load (0.4ms)[0m  SELECT "abilities".* FROM "abilities"
+  [1m[36mEducation Load (0.5ms)[0m  [1mSELECT "educations".* FROM "educations"[0m
+  [1m[35mLanguage Load (0.3ms)[0m  SELECT "languages".* FROM "languages"
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mTool Load (0.7ms)[0m  SELECT "tools".* FROM "tools"
+  [1m[36mWork Load (0.4ms)[0m  [1mSELECT "works".* FROM "works"[0m
+  Rendered static_pages/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 5641ms (Views: 5624.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/font-awesome.self-c1a7a80b6536c3397a1a212c9bd22298ae69260ee343d00b60d7f41fa54a59a8.css?body=1" for ::1 at 2016-04-24 11:36:52 -0400
+
+
+Started GET "/assets/static_pages.self-078ba6acecea5359c696d1300ab4611c1746e9f3c38ff15c9cf6b847b27665f8.css?body=1" for ::1 at 2016-04-24 11:36:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-24 11:36:52 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-24 11:36:52 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-04-24 11:36:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-24 11:36:52 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-24 11:36:52 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-04-24 11:36:52 -0400
+
+
+Started GET "/" for ::1 at 2016-04-24 11:39:03 -0400
+Processing by StaticPagesController#index as HTML
+  [1m[35mAbility Load (0.5ms)[0m  SELECT "abilities".* FROM "abilities"
+  [1m[36mEducation Load (0.5ms)[0m  [1mSELECT "educations".* FROM "educations"[0m
+  [1m[35mLanguage Load (0.6ms)[0m  SELECT "languages".* FROM "languages"
+  [1m[36mProject Load (1.9ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mTool Load (0.6ms)[0m  SELECT "tools".* FROM "tools"
+  [1m[36mWork Load (0.9ms)[0m  [1mSELECT "works".* FROM "works"[0m
+  Rendered static_pages/index.html.erb within layouts/application (24.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 217ms (Views: 193.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/font-awesome.self-c1a7a80b6536c3397a1a212c9bd22298ae69260ee343d00b60d7f41fa54a59a8.css?body=1" for ::1 at 2016-04-24 11:39:04 -0400
+
+
+Started GET "/assets/static_pages.self-5e99578d360d2bce7d736a9ab6d63aaf14ce2e48dfb5131219778040e04a0417.css?body=1" for ::1 at 2016-04-24 11:39:04 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-24 11:39:04 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-24 11:39:04 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-04-24 11:39:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-24 11:39:04 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-24 11:39:04 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-04-24 11:39:04 -0400
