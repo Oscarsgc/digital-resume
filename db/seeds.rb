@@ -1,5 +1,5 @@
 User.create!([
-  {email: "oscar_sgc@hotmail.com", encrypted_password: "Fossil141292", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2016-04-23 16:03:21", last_sign_in_at: "2016-04-23 16:03:21", current_sign_in_ip: "::1", last_sign_in_ip: "::1"}
+  {email: "oscar_sgc@hotmail.com", password: "Fossil141292",encrypted_password: "$2a$10$PsAG424L2ADGZk0KAqH76uv4EtdBOrxubWVM0c8stjQC93NKeJhRG", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 1, current_sign_in_at: "2016-04-23 16:03:21", last_sign_in_at: "2016-04-23 16:03:21", current_sign_in_ip: "::1", last_sign_in_ip: "::1"}
 ])
 Ability.create!([
   {name: "C++", rating: 4},
