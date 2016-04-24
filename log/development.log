@@ -33555,3 +33555,26 @@ DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in
   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "works"[0m
   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "works"
   [1m[36mWork Load (0.2ms)[0m  [1mSELECT  "works".* FROM "works" LIMIT 5 OFFSET 0[0m
+
+
+Started GET "/" for ::1 at 2016-04-24 11:20:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  [1m[35mAbility Load (0.4ms)[0m  SELECT "abilities".* FROM "abilities"
+  [1m[36mEducation Load (0.5ms)[0m  [1mSELECT "educations".* FROM "educations"[0m
+  [1m[35mLanguage Load (0.4ms)[0m  SELECT "languages".* FROM "languages"
+DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in paperclip 5. Please consider upgrading to AWS 2 before upgrading paperclip. (called from <class:Project> at /Users/oscar_sgc/RubymineProjects/myBlog/app/models/project.rb:2)
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mTool Load (0.3ms)[0m  SELECT "tools".* FROM "tools"
+  [1m[36mWork Load (0.4ms)[0m  [1mSELECT "works".* FROM "works"[0m
+  Rendered static_pages/index.html.erb within layouts/application (229.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 498ms (Views: 440.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/profile.jpg" for ::1 at 2016-04-24 11:20:23 -0400
+
+
+Started GET "/assets/Slide1.jpg" for ::1 at 2016-04-24 11:20:23 -0400
