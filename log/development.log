@@ -34074,3 +34074,455 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-04-24 11:39:04 -0400
+
+
+Started GET "/" for ::1 at 2016-04-24 14:32:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  [1m[35mAbility Load (0.5ms)[0m  SELECT "abilities".* FROM "abilities"
+  [1m[36mEducation Load (0.4ms)[0m  [1mSELECT "educations".* FROM "educations"[0m
+  [1m[35mLanguage Load (0.4ms)[0m  SELECT "languages".* FROM "languages"
+DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in paperclip 5. Please consider upgrading to AWS 2 before upgrading paperclip. (called from <class:Project> at /Users/oscar_sgc/RubymineProjects/myBlog/app/models/project.rb:2)
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mTool Load (0.6ms)[0m  SELECT "tools".* FROM "tools"
+  [1m[36mWork Load (0.4ms)[0m  [1mSELECT "works".* FROM "works"[0m
+  Rendered static_pages/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2418ms (Views: 2350.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/static_pages.self-20d9bd4f3a4805e9bc1b823bc25b27ecc48da3e632ffdf2c6204195678708357.css?body=1" for ::1 at 2016-04-24 14:32:14 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-04-24 14:32:14 -0400
+
+
+Started GET "/" for ::1 at 2016-04-24 14:32:16 -0400
+Processing by StaticPagesController#index as HTML
+  [1m[35mAbility Load (0.2ms)[0m  SELECT "abilities".* FROM "abilities"
+  [1m[36mEducation Load (0.2ms)[0m  [1mSELECT "educations".* FROM "educations"[0m
+  [1m[35mLanguage Load (0.1ms)[0m  SELECT "languages".* FROM "languages"
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mTool Load (0.2ms)[0m  SELECT "tools".* FROM "tools"
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works"[0m
+  Rendered static_pages/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 44.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/projects" for ::1 at 2016-04-24 14:32:17 -0400
+Processing by ProjectsController#index as HTML
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-04-24 14:32:17 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/devise-3.5.5/app/views/devise/shared/_links.html.erb (5.7ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/devise-3.5.5/app/views/devise/sessions/new.html.erb within layouts/application (29.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 161ms (Views: 61.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/projects" for ::1 at 2016-04-24 14:32:18 -0400
+Processing by ProjectsController#index as HTML
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-04-24 14:32:18 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/devise-3.5.5/app/views/devise/shared/_links.html.erb (4.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/devise-3.5.5/app/views/devise/sessions/new.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-04-24 14:32:26 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AfzzPkfsWfiEm80HDwGs9lBsL5Z57LY0RTUQNAYukCqkHyuLJA7pz/tNurfxvMct/QnzjQXp/9Q23tdSIcoqwg==", "user"=>{"email"=>"oscar_sgc@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "oscar_sgc@hotmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2016-04-24 18:32:26.941020"], ["sign_in_count", 2], ["updated_at", "2016-04-24 18:32:26.941890"], ["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/projects
+Completed 302 Found in 104ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/projects" for ::1 at 2016-04-24 14:32:26 -0400
+Processing by ProjectsController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  Rendered projects/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/projects/new" for ::1 at 2016-04-24 14:32:28 -0400
+Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered projects/_form.html.erb (6.0ms)
+  Rendered projects/new.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 52.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/projects" for ::1 at 2016-04-24 14:32:43 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OLfdR3S04VRtnGRDDKV7kC3kLlsIKrtW8UDWI7j2DJuJXsgsZm584U4RqA3DbBajJZZarpv8u9IDHIp21Z/VfQ==", "project"=>{"name"=>"test", "description"=>"ajklsdj", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007ff3fd821100 @tempfile=#<Tempfile:/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/RackMultipart20160424-8087-hey9i3.png>, @original_filename="ORP Displaying copy.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"ORP Displaying copy.png\"\r\nContent-Type: image/png\r\n">, "link"=>" one"}, "commit"=>"Create Project"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: file -b --mime '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/a1880c12ce33d16485488d687ab9bf9120160424-8087-ae0nfj.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/d791bad4d7072cf5d693c7f5525245d920160424-8087-k4f43w.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/d791bad4d7072cf5d693c7f5525245d920160424-8087-k4f43w.png[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/d791bad4d7072cf5d693c7f5525245d920160424-8087-k4f43w.png[0]' -auto-orient -resize "300x300>" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/2b28e8d450d98342e64d02d5f93921f020160424-8087-lpf5q3'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/d791bad4d7072cf5d693c7f5525245d920160424-8087-k4f43w.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/d791bad4d7072cf5d693c7f5525245d920160424-8087-k4f43w.png[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/d791bad4d7072cf5d693c7f5525245d920160424-8087-k4f43w.png[0]' -auto-orient -resize "200x200" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/2b28e8d450d98342e64d02d5f93921f020160424-8087-pidi2b'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/d791bad4d7072cf5d693c7f5525245d920160424-8087-k4f43w.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/d791bad4d7072cf5d693c7f5525245d920160424-8087-k4f43w.png[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/d791bad4d7072cf5d693c7f5525245d920160424-8087-k4f43w.png[0]' -auto-orient -resize "100x100>" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/2b28e8d450d98342e64d02d5f93921f020160424-8087-1402byc'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/a1880c12ce33d16485488d687ab9bf9120160424-8087-fvrgmd.png'
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "projects" ("name", "description", "link", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "test"], ["description", "ajklsdj"], ["link", " one"], ["photo_file_name", "ORP_Displaying_copy.png"], ["photo_content_type", "image/png"], ["photo_file_size", 188468], ["photo_updated_at", "2016-04-24 18:32:43.507518"], ["created_at", "2016-04-24 18:32:45.030937"], ["updated_at", "2016-04-24 18:32:45.030937"]]
+[paperclip] saving /projects/photos/000/000/001/original/ORP_Displaying_copy.png
+  [1m[35m (0.3ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 1533ms (ActiveRecord: 1.3ms)
+
+ArgumentError (missing required :bucket option):
+  app/controllers/projects_controller.rb:31:in `block in create'
+  app/controllers/projects_controller.rb:30:in `create'
+
+
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.9ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.6ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.0ms)
+
+
+Started GET "/projects/new" for ::1 at 2016-04-24 14:36:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in paperclip 5. Please consider upgrading to AWS 2 before upgrading paperclip. (called from <class:Project> at /Users/oscar_sgc/RubymineProjects/myBlog/app/models/project.rb:2)
+  Rendered projects/_form.html.erb (39.1ms)
+  Rendered projects/new.html.erb within layouts/application (49.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 441ms (Views: 395.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/projects/new" for ::1 at 2016-04-24 14:36:30 -0400
+Processing by ProjectsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered projects/_form.html.erb (2.4ms)
+  Rendered projects/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/font-awesome.self-c1a7a80b6536c3397a1a212c9bd22298ae69260ee343d00b60d7f41fa54a59a8.css?body=1" for ::1 at 2016-04-24 14:36:30 -0400
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-04-24 14:36:30 -0400
+
+
+Started GET "/assets/static_pages.self-20d9bd4f3a4805e9bc1b823bc25b27ecc48da3e632ffdf2c6204195678708357.css?body=1" for ::1 at 2016-04-24 14:36:30 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-24 14:36:30 -0400
+
+
+Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-24 14:36:30 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-24 14:36:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-24 14:36:30 -0400
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2016-04-24 14:36:30 -0400
+
+
+Started POST "/projects" for ::1 at 2016-04-24 14:36:41 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m4TbmlvrYlJ7Qfr1CKmk5SDrpWMdWP8TPf0qsBkgA6Aqbc7xSTH/51jMNrvHYMnWKJnRlo6O/5fPoXbldEnaRg==", "project"=>{"name"=>"test", "description"=>"Ninie", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f88a19d0bd0 @tempfile=#<Tempfile:/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/RackMultipart20160424-8140-jrq5tx.jpg>, @original_filename="IMG_1763_1024.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"IMG_1763_1024.jpg\"\r\nContent-Type: image/jpeg\r\n">, "link"=>"qwkdjh"}, "commit"=>"Create Project"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: file -b --mime '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1o6ld0c.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-tk4oih.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-tk4oih.jpg[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-tk4oih.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/76d4a495f9b8e300508964ca40ddd43220160424-8140-1jzsjac'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-tk4oih.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-tk4oih.jpg[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-tk4oih.jpg[0]' -auto-orient -resize "200x200" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/76d4a495f9b8e300508964ca40ddd43220160424-8140-1b6xac9'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-tk4oih.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-tk4oih.jpg[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-tk4oih.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/76d4a495f9b8e300508964ca40ddd43220160424-8140-1njx1mc'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-357htj.jpg'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "link", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "test"], ["description", "Ninie"], ["link", "qwkdjh"], ["photo_file_name", "IMG_1763_1024.jpg"], ["photo_content_type", "image/jpeg"], ["photo_file_size", 259144], ["photo_updated_at", "2016-04-24 18:36:41.676961"], ["created_at", "2016-04-24 18:36:42.000528"], ["updated_at", "2016-04-24 18:36:42.000528"]]
+[paperclip] saving /projects/photos/000/000/001/original/IMG_1763_1024.jpg
+  [1m[36m (1.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 1370ms (ActiveRecord: 1.7ms)
+
+AWS::Errors::MissingCredentialsError (
+Missing Credentials.
+
+Unable to find AWS credentials.  You can configure your AWS credentials
+a few different ways:
+
+* Call AWS.config with :access_key_id and :secret_access_key
+
+* Export AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY to ENV
+
+* On EC2 you can run instances with an IAM instance profile and credentials
+  will be auto loaded from the instance metadata service on those
+  instances.
+
+* Call AWS.config with :credential_provider.  A credential provider should
+  either include AWS::Core::CredentialProviders::Provider or respond to
+  the same public methods.
+
+= Ruby on Rails
+
+In a Ruby on Rails application you may also specify your credentials in
+the following ways:
+
+* Via a config initializer script using any of the methods mentioned above
+  (e.g. RAILS_ROOT/config/initializers/aws-sdk.rb).
+
+* Via a yaml configuration file located at RAILS_ROOT/config/aws.yml.
+  This file should be formated like the default RAILS_ROOT/config/database.yml
+  file.
+
+):
+  app/controllers/projects_controller.rb:31:in `block in create'
+  app/controllers/projects_controller.rb:30:in `create'
+
+
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.5ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.7ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (50.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (103.8ms)
+
+
+Started POST "/projects" for ::1 at 2016-04-24 14:37:57 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m4TbmlvrYlJ7Qfr1CKmk5SDrpWMdWP8TPf0qsBkgA6Aqbc7xSTH/51jMNrvHYMnWKJnRlo6O/5fPoXbldEnaRg==", "project"=>{"name"=>"test", "description"=>"Ninie", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f88a1d0ea68 @tempfile=#<Tempfile:/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/RackMultipart20160424-8140-1wxjgtn.jpg>, @original_filename="IMG_1763_1024.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"IMG_1763_1024.jpg\"\r\nContent-Type: image/jpeg\r\n">, "link"=>"qwkdjh"}, "commit"=>"Create Project"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: file -b --mime '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1cmzeet.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1kxcsq6.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1kxcsq6.jpg[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1kxcsq6.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/12f26d540b859f862859fc5ee2055f6e20160424-8140-1iwq37f'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1kxcsq6.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1kxcsq6.jpg[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1kxcsq6.jpg[0]' -auto-orient -resize "200x200" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/12f26d540b859f862859fc5ee2055f6e20160424-8140-1xwokh5'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1kxcsq6.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1kxcsq6.jpg[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1kxcsq6.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/12f26d540b859f862859fc5ee2055f6e20160424-8140-uivmkr'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1amtql2.jpg'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("name", "description", "link", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "test"], ["description", "Ninie"], ["link", "qwkdjh"], ["photo_file_name", "IMG_1763_1024.jpg"], ["photo_content_type", "image/jpeg"], ["photo_file_size", 259144], ["photo_updated_at", "2016-04-24 18:37:57.262560"], ["created_at", "2016-04-24 18:37:57.549359"], ["updated_at", "2016-04-24 18:37:57.549359"]]
+[paperclip] saving /projects/photos/000/000/001/original/IMG_1763_1024.jpg
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 1.0ms)
+
+AWS::Errors::MissingCredentialsError (
+Missing Credentials.
+
+Unable to find AWS credentials.  You can configure your AWS credentials
+a few different ways:
+
+* Call AWS.config with :access_key_id and :secret_access_key
+
+* Export AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY to ENV
+
+* On EC2 you can run instances with an IAM instance profile and credentials
+  will be auto loaded from the instance metadata service on those
+  instances.
+
+* Call AWS.config with :credential_provider.  A credential provider should
+  either include AWS::Core::CredentialProviders::Provider or respond to
+  the same public methods.
+
+= Ruby on Rails
+
+In a Ruby on Rails application you may also specify your credentials in
+the following ways:
+
+* Via a config initializer script using any of the methods mentioned above
+  (e.g. RAILS_ROOT/config/initializers/aws-sdk.rb).
+
+* Via a yaml configuration file located at RAILS_ROOT/config/aws.yml.
+  This file should be formated like the default RAILS_ROOT/config/database.yml
+  file.
+
+):
+  app/controllers/projects_controller.rb:31:in `block in create'
+  app/controllers/projects_controller.rb:30:in `create'
+
+
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.8ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (85.1ms)
+
+
+Started GET "/projects/new" for ::1 at 2016-04-24 14:37:59 -0400
+Processing by ProjectsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered projects/_form.html.erb (2.1ms)
+  Rendered projects/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/projects" for ::1 at 2016-04-24 14:38:06 -0400
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jArXvAM0BX0Ydz6NWfsrXNhGrew7/Z3BWG7kJfCvVYA948LXEe6YyDv68sOWMkZv0DTZGagrnUWqMrhwncaMZg==", "project"=>{"name"=>"aslkdh", "description"=>"kljklj", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007f88a0bad1c0 @tempfile=#<Tempfile:/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/RackMultipart20160424-8140-1k1xy7s.jpg>, @original_filename="IMG_1763_1024.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"IMG_1763_1024.jpg\"\r\nContent-Type: image/jpeg\r\n">, "link"=>""}, "commit"=>"Create Project"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: file -b --mime '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-lf6cf7.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1nse9pw.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1nse9pw.jpg[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1nse9pw.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/7560c4ce7b6ee492ce580dd0cb8209e320160424-8140-3sbpb3'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1nse9pw.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1nse9pw.jpg[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1nse9pw.jpg[0]' -auto-orient -resize "200x200" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/7560c4ce7b6ee492ce580dd0cb8209e320160424-8140-ojo7r4'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1nse9pw.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1nse9pw.jpg[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1nse9pw.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/7560c4ce7b6ee492ce580dd0cb8209e320160424-8140-1d2rpmp'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8140-1c7vx70.jpg'
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "link", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "aslkdh"], ["description", "kljklj"], ["link", ""], ["photo_file_name", "IMG_1763_1024.jpg"], ["photo_content_type", "image/jpeg"], ["photo_file_size", 259144], ["photo_updated_at", "2016-04-24 18:38:06.638808"], ["created_at", "2016-04-24 18:38:06.914487"], ["updated_at", "2016-04-24 18:38:06.914487"]]
+[paperclip] saving /projects/photos/000/000/001/original/IMG_1763_1024.jpg
+  [1m[35m (0.3ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 283ms (ActiveRecord: 0.8ms)
+
+AWS::Errors::MissingCredentialsError (
+Missing Credentials.
+
+Unable to find AWS credentials.  You can configure your AWS credentials
+a few different ways:
+
+* Call AWS.config with :access_key_id and :secret_access_key
+
+* Export AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY to ENV
+
+* On EC2 you can run instances with an IAM instance profile and credentials
+  will be auto loaded from the instance metadata service on those
+  instances.
+
+* Call AWS.config with :credential_provider.  A credential provider should
+  either include AWS::Core::CredentialProviders::Provider or respond to
+  the same public methods.
+
+= Ruby on Rails
+
+In a Ruby on Rails application you may also specify your credentials in
+the following ways:
+
+* Via a config initializer script using any of the methods mentioned above
+  (e.g. RAILS_ROOT/config/initializers/aws-sdk.rb).
+
+* Via a yaml configuration file located at RAILS_ROOT/config/aws.yml.
+  This file should be formated like the default RAILS_ROOT/config/database.yml
+  file.
+
+):
+  app/controllers/projects_controller.rb:31:in `block in create'
+  app/controllers/projects_controller.rb:30:in `create'
+
+
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.8ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.8ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (88.8ms)
+
+
+Started POST "/projects" for ::1 at 2016-04-24 14:43:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jArXvAM0BX0Ydz6NWfsrXNhGrew7/Z3BWG7kJfCvVYA948LXEe6YyDv68sOWMkZv0DTZGagrnUWqMrhwncaMZg==", "project"=>{"name"=>"aslkdh", "description"=>"kljklj", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007fbafcfe4ea8 @tempfile=#<Tempfile:/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/RackMultipart20160424-8241-13v0x95.jpg>, @original_filename="IMG_1763_1024.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"project[photo]\"; filename=\"IMG_1763_1024.jpg\"\r\nContent-Type: image/jpeg\r\n">, "link"=>""}, "commit"=>"Create Project"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in paperclip 5. Please consider upgrading to AWS 2 before upgrading paperclip. (called from <class:Project> at /Users/oscar_sgc/RubymineProjects/myBlog/app/models/project.rb:2)
+Command :: file -b --mime '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8241-1s9xuat.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8241-1yvmxri.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8241-1yvmxri.jpg[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8241-1yvmxri.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b573e5ddfc25a10d20d18801999b68d920160424-8241-1u4cr7m'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8241-1yvmxri.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8241-1yvmxri.jpg[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8241-1yvmxri.jpg[0]' -auto-orient -resize "200x200" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b573e5ddfc25a10d20d18801999b68d920160424-8241-1t1ibx0'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8241-1yvmxri.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8241-1yvmxri.jpg[0]'
+Command :: convert '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8241-1yvmxri.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b573e5ddfc25a10d20d18801999b68d920160424-8241-1tsw9j7'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/4l/hcfh5vnn4r74k5687n0bn9jh0000gn/T/b8a5a3499fa5e4300bc178c84002fbfc20160424-8241-1y5zc6j.jpg'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "link", "photo_file_name", "photo_content_type", "photo_file_size", "photo_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["name", "aslkdh"], ["description", "kljklj"], ["link", ""], ["photo_file_name", "IMG_1763_1024.jpg"], ["photo_content_type", "image/jpeg"], ["photo_file_size", 259144], ["photo_updated_at", "2016-04-24 18:43:49.693817"], ["created_at", "2016-04-24 18:43:50.021216"], ["updated_at", "2016-04-24 18:43:50.021216"]]
+[paperclip] saving /projects/photos/000/000/001/original/IMG_1763_1024.jpg
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 383ms (ActiveRecord: 1.7ms)
+
+ArgumentError (missing required :bucket option):
+  app/controllers/projects_controller.rb:31:in `block in create'
+  app/controllers/projects_controller.rb:30:in `create'
+
+
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.0ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.4ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (117.4ms)

@@ -1,5 +1,5 @@
 <section id="main-slider">
-  <div id="top" class="jumbotron" data-src="/images/Slide1.jpg" data-position="center">
+  <div id="top" class="jumbotron" data-src="/public/images/Slide1.jpg" data-position="center">
     <div class="container">
       <h1>Oscar González</h1>
       <p class="lead">Interactive resume</p>
@@ -22,16 +22,16 @@
 
         <h3><i class="fa fa-male"> &nbsp;About me</i></h3>
         <p>
-          I'm a responsible person, who likes to work under pressure. I have experience developing web systems, web
+          I'm a responsible person that likes to work under pressure. I have experiences in developing web systems, web
           pages and desktop systems.
         </p>
         <p>
-          I have no problems solving any difficulty arising me, it doesn't matter if is a design, programming or testing
-          task, be sure I'm gonna solve it.
+          I have no problems solving any difficulty arising me, it doesn't matter if it is a design, programming or
+          testing task, be sure I'm gonna solve it.
         </p>
         <p>
-          I like to participate in seminars and lectures and I'm always interested in learn new skills, whether in
-          technology or research area.
+          I like to participate in seminars and lectures and I'm always interested in learning new skills, whether in
+          technology or research area. I like working in a team and enjoy traveling, as well as all sorts of music.
         </p>
       </div>
       <div class="col-md-4 text-center">
@@ -69,8 +69,7 @@
   <div class="container">
     <h1 class="center">Experiences</h1>
     <p class="center">
-      &ldquo;Protons give an atom its identity, electrons its personality.&rdquo;<br/>- Bill Bryson, A short history of
-      nearly everything
+      <br>
     </p>
     <hr>
     <h2><i class="fa fa-graduation-cap">&nbsp;Education</i></h2>
@@ -149,7 +148,7 @@
   <div class="container">
     <h1 class="center">Abilities</h1>
     <p class="center">
-      &ldquo;Life without knowledge is death in disguise.&rdquo;<br/>- Talib Kweli
+      <br>
     </p>
     <hr>
     <h2><i class="fa fa-code">&nbsp;Skills</i></h2>
@@ -239,34 +238,34 @@
   <div class="container">
     <h1 class="center">Projects</h1>
     <p class="center">
-      &ldquo;You can do anything you set your mind to.&rdquo;<br/>- Benjamin Franklin
+      <br>
     </p>
     <hr>
     <div class="row">
-      <div class="col-md-6 col-sm-12 col-xs-12">
-        <% @projects.each do |project| %>
+      <% @projects.each do |project| %>
+          <div class="col-md-6 col-sm-12 col-xs-12">
             <figure class="effect">
               <%= image_tag project.photo.url(:square) %>
               <figcaption>
                 <h3><%= project.name %></h3>
                 <p><%= project.description %></p>
-                <a href="<%=project.link%>" target="_blank"></a>
-                <span class="icon">
-                  <span class="glyphicon glyphicon-new-window"></span>
-                  </span>
+                <a href="<%= project.link %>" target="_blank">View more</a>
+				        <span class="icon">
+        					<span class="glyphicon glyphicon-new-window"></span>
+        				</span>
               </figcaption>
             </figure>
-        <% end %>
-      </div>
-    </div><!--/.container-->
-  </div>
+          </div>
+      <% end %>
+    </div>
+  </div><!--/.container-->
 </section><!--/ #about-us-->
 
 <section id="Contact">
   <div class="container">
     <h1 class="center">Contact</h1>
     <p class="center">
-      &ldquo;If I had asked people what they wanted, they would have said faster horses. &rdquo;<br/>- Henry Ford
+      <br/>
     </p>
     <hr>
     <div class="row">
