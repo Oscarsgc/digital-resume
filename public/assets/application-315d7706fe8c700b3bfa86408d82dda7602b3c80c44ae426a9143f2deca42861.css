@@ -10901,20 +10901,14 @@ h6 {
 }
 
 /* line 23, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
-.carousel-small-text {
-  color: #999;
-  font-weight: 300;
-}
-
-/* line 28, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .education-title {
   color: #999;
   font-weight: 300;
 }
 
-/* line 33, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 28, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .jumbotron {
-  background: no-repeat center right fixed url(/assets/Slide1.jpg);
+  background: url("slide1.jpg") no-repeat center right fixed;
   min-height: 630px;
   -webkit-background-size: auto;
   -moz-background-size: 100%;
@@ -10924,37 +10918,37 @@ h6 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/Slide1.jpg');
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/Slide1.jpg');
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Slide1.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Slide1.jpg');
   margin-bottom: 0px;
   padding: 0px;
 }
 
-/* line 54, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 49, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 p.lead {
   text-align: center;
   color: #727878;
 }
 
-/* line 55, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 54, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 p.lead a {
   color: #FFFFFF;
   text-decoration: underline;
 }
 
-/* line 56, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 59, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 p.lead a:hover {
   text-decoration: none;
 }
 
-/* line 57, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 63, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 ul.no-bullets {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
 }
 
-/* line 58, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 69, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 hr {
   margin: 40px 0px;
   border-color: #727878;
@@ -10962,7 +10956,7 @@ hr {
   filter: alpha(opacity=20);
 }
 
-/* line 61, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 76, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .jumbotron .container {
   position: relative;
   top: 28%;
@@ -10970,26 +10964,25 @@ hr {
   text-align: center;
 }
 
-/* line 62, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 83, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .jumbotron .container > * {
   text-align: center;
   color: #FFFFFF;
 }
 
-/* line 63, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 88, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .jumbotron .container h1 {
-  padding-bottom: 20px;
   border-bottom: 1px solid #FFFFFF;
   border-bottom-color: rgba(255, 255, 255, 0.35);
   display: inline-block;
 }
 
-/* line 64, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 94, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .jumbotron .container .lead {
   font-size: 28px;
 }
 
-/* line 65, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 98, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .jumbotron .scroll-down {
   height: 80px;
   width: 110px;
@@ -11002,7 +10995,7 @@ hr {
   z-index: 6;
 }
 
-/* line 66, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 110, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .jumbotron .scroll-down .glyphicon {
   color: #FFFFFF;
   font-size: 30px;
@@ -11015,7 +11008,7 @@ hr {
   animation-direction: normal;
 }
 
-/* line 79, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 123, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .jumbotron .scroll-down:hover .glyphicon {
   padding-top: 35px;
 }
@@ -11031,13 +11024,13 @@ hr {
     padding-top: 20px;
   }
 }
-/* line 95, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 141, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .ability-title {
   color: #b62400;
   font-size: 15px;
 }
 
-/* line 100, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 146, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 a {
   color: #52b6ec;
   -webkit-transition: 300ms;
@@ -11046,12 +11039,12 @@ a {
   transition: 300ms;
 }
 
-/* line 108, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 154, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .carousel-inner > .item > img {
   margin: 0 auto;
 }
 
-/* line 112, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 158, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .main-text {
   position: absolute;
   top: 50px;
@@ -11060,23 +11053,23 @@ a {
   z-index: 2;
 }
 
-/* line 120, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 166, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .linkaurio:hover {
   cursor: pointer;
 }
 
-/* line 124, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 170, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .btn {
   font-weight: 300;
   border: 0;
 }
 
-/* line 129, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 175, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .btn.btn-primary {
   background-color: #52b6ec;
 }
 
-/* line 133, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 179, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .btn.btn-primary:hover,
 .btn.btn-primary.active {
   -webkit-box-shadow: none;
@@ -11084,7 +11077,7 @@ a {
   box-shadow: none;
 }
 
-/* line 141, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 186, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 a:hover,
 a:focus {
   color: #80c9f1;
@@ -11092,7 +11085,7 @@ a:focus {
   outline: none;
 }
 
-/* line 148, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 193, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #header {
   position: fixed;
   top: 0;
@@ -11102,32 +11095,32 @@ a:focus {
   z-index: 99999;
 }
 
-/* line 157, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 202, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #Profile {
   padding-top: 70px;
 }
 
-/* line 161, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 206, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #Experiences {
   padding-top: 70px;
 }
 
-/* line 165, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 210, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #Abilities {
   padding-top: 70px;
 }
 
-/* line 169, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 214, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #Projects {
   padding-top: 70px;
 }
 
-/* line 173, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 218, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #Contact {
   padding-top: 70px;
 }
 
-/* line 177, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 222, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #main-slider {
   background-attachment: fixed;
   background-size: cover;
@@ -11137,7 +11130,7 @@ a:focus {
   color: #fff;
 }
 
-/* line 186, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 231, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #main-slider .item {
   -moz-transition: opacity ease-in-out 500ms;
   -o-transition: opacity ease-in-out 500ms;
@@ -11153,13 +11146,13 @@ a:focus {
   text-align: center;
 }
 
-/* line 201, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 246, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #main-slider .item:first-child {
   top: auto;
   position: relative;
 }
 
-/* line 206, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 251, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #main-slider .item.active {
   opacity: 1;
   -moz-transition: opacity ease-in-out 500ms;
@@ -11169,7 +11162,7 @@ a:focus {
   z-index: 0;
 }
 
-/* line 215, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 260, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #main-slider .item.active h1 {
   -webkit-animation: scaleUp 400ms;
   -moz-animation: scaleUp 400ms;
@@ -11178,7 +11171,7 @@ a:focus {
   animation: scaleUp 400ms;
 }
 
-/* line 223, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 268, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #main-slider .prev,
 #main-slider .next {
   position: absolute;
@@ -11196,23 +11189,23 @@ a:focus {
   z-index: 5;
 }
 
-/* line 240, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 285, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #main-slider .prev:hover,
 #main-slider .next:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 245, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 290, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #main-slider .prev {
   left: 10px;
 }
 
-/* line 249, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 294, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #main-slider .next {
   right: 10px;
 }
 
-/* line 253, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 298, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #main-slider h1 {
   font-size: 68px;
   text-shadow: 0 3px rgba(0, 0, 0, 0.1);
@@ -11221,19 +11214,19 @@ a:focus {
 
 /* Start: Recommended Isotope styles */
 /**** Isotope Filtering ****/
-/* line 261, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 306, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 265, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 310, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .isotope-hidden.isotope-item {
   pointer-events: none;
   z-index: 1;
 }
 
 /**** Isotope CSS3 transitions ****/
-/* line 271, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 316, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -11243,7 +11236,7 @@ a:focus {
   transition-duration: 0.8s;
 }
 
-/* line 280, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 325, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -11252,7 +11245,7 @@ a:focus {
   transition-property: height, width;
 }
 
-/* line 288, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 333, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -11262,7 +11255,7 @@ a:focus {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 297, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 342, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -11275,7 +11268,7 @@ a:focus {
 
 /* End: Recommended Isotope styles */
 /* disable CSS transitions for containers with infinite scrolling*/
-/* line 309, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 354, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .isotope.infinite-scrolling {
   -webkit-transition: none;
   -moz-transition: none;
@@ -11284,41 +11277,41 @@ a:focus {
   transition: none;
 }
 
-/* line 317, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 362, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .center {
   text-align: center;
 }
 
-/* line 321, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 366, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #team-scroller .designation {
   margin-top: 10px;
   display: block;
 }
 
-/* line 326, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 371, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .member {
   margin: 0 50px;
   text-align: center;
 }
 
-/* line 331, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 376, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .carousel.scale .left-arrow,
 .carousel.scale .right-arrow {
   top: 30%;
   position: absolute;
 }
 
-/* line 337, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 382, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .carousel.scale .left-arrow {
   left: -10px;
 }
 
-/* line 341, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 386, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .carousel.scale .right-arrow {
   right: -10px;
 }
 
-/* line 345, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 390, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .carousel.scale .active .row > div:nth-child(1) {
   -webkit-animation: scaleUp 200ms linear 0 both;
   -moz-animation: scaleUp 200ms linear 0 both;
@@ -11327,7 +11320,7 @@ a:focus {
   animation: scaleUp 200ms linear 0 both;
 }
 
-/* line 353, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 398, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .carousel.scale .active .row > div:nth-child(2) {
   -webkit-animation: scaleUp 200ms linear 100ms both;
   -moz-animation: scaleUp 200ms linear 100ms both;
@@ -11336,7 +11329,7 @@ a:focus {
   animation: scaleUp 200ms linear 100ms both;
 }
 
-/* line 361, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 406, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .carousel.scale .active .row > div:nth-child(3) {
   -webkit-animation: scaleUp 200ms linear 200ms both;
   -moz-animation: scaleUp 200ms linear 200ms both;
@@ -11345,7 +11338,7 @@ a:focus {
   animation: scaleUp 200ms linear 200ms both;
 }
 
-/* line 369, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 414, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .carousel.scale .active .row > div:nth-child(4) {
   -webkit-animation: scaleUp 200ms linear 400ms both;
   -moz-animation: scaleUp 200ms linear 400ms both;
@@ -11354,7 +11347,7 @@ a:focus {
   animation: scaleUp 200ms linear 400ms both;
 }
 
-/* line 377, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 422, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social {
   border: 0;
   color: #fff;
@@ -11367,72 +11360,72 @@ a:focus {
   padding: 0;
 }
 
-/* line 389, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 434, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social.icon-facebook {
   background: #4f7dd4;
 }
 
-/* line 393, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 438, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social.icon-facebook:hover {
   background: #789bde;
 }
 
-/* line 397, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 442, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social.icon-twitter {
   background: #5bceff;
 }
 
-/* line 401, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 446, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social.icon-twitter:hover {
   background: #8eddff;
 }
 
-/* line 405, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 450, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social.icon-linkedin {
   background: #21a6d8;
 }
 
-/* line 409, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 454, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social.icon-linkedin:hover {
   background: #49b9e3;
 }
 
-/* line 413, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 458, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social.icon-google-plus {
   background: #dc422b;
 }
 
-/* line 417, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 462, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social.icon-google-plus:hover {
   background: #e36957;
 }
 
-/* line 421, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 466, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social.icon-pinterest {
   background: #cb2027;
 }
 
-/* line 425, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 470, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social.icon-pinterest:hover {
   background: #e03e44;
 }
 
-/* line 429, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 474, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social.icon-youtube {
   background: #ce332d;
 }
 
-/* line 433, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 478, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social.icon-youtube:hover {
   background: #da5954;
 }
 
-/* line 437, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 482, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-social:hover {
   color: #fff;
 }
 
-/* line 441, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 486, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .navbar-default {
   background: #fff;
   border-radius: 0 0 5px 5px;
@@ -11444,12 +11437,12 @@ a:focus {
   overflow: hidden;
 }
 
-/* line 452, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 497, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .navbar-default .first a {
   border-radius: 0 0 0 5px;
 }
 
-/* line 456, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 501, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .navbar-default .navbar-brand {
   margin-right: 50px;
   margin-left: 20px;
@@ -11457,12 +11450,12 @@ a:focus {
   height: 20px;
 }
 
-/* line 463, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 508, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .navbar-default .navbar-nav > li {
   margin-left: 1px;
 }
 
-/* line 467, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 512, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .navbar-default .navbar-nav > li > a {
   padding: 30px 25px;
   font-size: 15px;
@@ -11470,12 +11463,12 @@ a:focus {
   color: #999;
 }
 
-/* line 474, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 519, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .navbar-default .navbar-nav > li > a > i {
   display: inline-block;
 }
 
-/* line 479, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 523, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .navbar-default .navbar-nav > li.active > a,
 .navbar-default .navbar-nav > li.active:focus > a,
 .navbar-default .navbar-nav > li.active:hover > a,
@@ -11490,7 +11483,7 @@ a:focus {
   color: #fff;
 }
 
-/* line 494, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 537, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-lg {
   font-size: 48px;
   height: 108px;
@@ -11504,7 +11497,7 @@ a:focus {
   border-radius: 100%;
 }
 
-/* line 507, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 550, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .icon-md {
   font-size: 24px;
   height: 68px;
@@ -11519,87 +11512,57 @@ a:focus {
   margin-bottom: 10px;
 }
 
-/* line 521, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
-.icon-color1 {
-  background-color: #e74c3c;
-}
-
-/* line 525, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
-.icon-color2 {
-  background-color: #2ecc71;
-}
-
-/* line 529, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
-.icon-color3 {
-  background-color: #3498db;
-}
-
-/* line 533, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
-.icon-color4 {
-  background-color: #8e44ad;
-}
-
-/* line 537, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
-.icon-color5 {
-  background-color: #1abc9c;
-}
-
-/* line 541, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
-.icon-color6 {
-  background-color: #2c3e50;
-}
-
-/* line 545, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 564, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .gap {
   margin-bottom: 50px;
 }
 
-/* line 549, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 568, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .big-gap {
   margin-bottom: 100px;
 }
 
-/* line 553, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 572, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #footer {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #999;
 }
 
-/* line 559, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 578, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #footer a {
   color: #999;
 }
 
-/* line 563, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 582, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 #footer a:hover {
   color: #52b6ec;
 }
 
-/* line 567, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 586, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 ul.social {
   list-style: none;
   margin: 10px 0 0;
   padding: 0;
 }
 
-/* line 573, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 592, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 ul.social > li {
   margin: 0 0 20px;
 }
 
-/* line 577, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 596, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 ul.social > li > a {
   display: block;
   font-size: 18px;
 }
 
-/* line 582, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 601, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 ul.social > li > a i {
   margin-right: 10px;
 }
 
-/* line 586, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 605, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 textarea#message {
   padding: 10px 15px;
   height: 220px;
@@ -11655,7 +11618,12 @@ textarea#message {
     -o-transform: scale(1);
   }
 }
-/* line 651, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 665, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+figure.effect {
+  color: #FFF;
+}
+
+/* line 669, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 figure.effect img {
   width: -webkit-calc(100% + 20px);
   width: calc(100% + 20px);
@@ -11667,19 +11635,19 @@ figure.effect img {
   backface-visibility: hidden;
 }
 
-/* line 662, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 680, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 figure.effect:hover img {
   opacity: 0.2;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 668, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 686, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 figure.effect figcaption {
   text-align: center;
 }
 
-/* line 672, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 690, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 figure.effect h3 {
   position: relative;
   overflow: hidden;
@@ -11689,12 +11657,12 @@ figure.effect h3 {
   transition: opacity 0.35s, transform 0.35s;
 }
 
-/* line 681, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 699, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 figure.effect:hover h3 {
   opacity: 1;
 }
 
-/* line 685, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 703, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 figure.effect h3::after {
   position: absolute;
   bottom: 0;
@@ -11709,13 +11677,13 @@ figure.effect h3::after {
   transform: translate3d(-100%, 0, 0);
 }
 
-/* line 699, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 717, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 figure.effect:hover h3::after {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-/* line 704, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 722, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 figure.effect p {
   padding-top: 10px;
   opacity: 0;
@@ -11725,7 +11693,7 @@ figure.effect p {
   transform: translate3d(100%, 0, 0);
 }
 
-/* line 713, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
+/* line 731, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 figure.effect:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);

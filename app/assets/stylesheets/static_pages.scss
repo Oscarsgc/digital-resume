@@ -26,7 +26,7 @@ h6 {
 }
 
 .jumbotron {
-  background: url(/assets/Slide1-af896cb13a4dda694db028f3d9fa5f4fbfbe5604c1da7addea37ddf0d9f16a77.jpg) no-repeat center right fixed;
+  background: url('slide1.jpg') no-repeat center right fixed;
   min-height: 630px;
 
   -webkit-background-size: auto;
@@ -39,8 +39,8 @@ h6 {
   -o-background-size: cover;
   background-size: cover;
 
-  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Slide1.jpg');
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Slide1.jpg');
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/slide1.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/slide1.jpg');
 
   margin-bottom: 0px;
   padding: 0px;
