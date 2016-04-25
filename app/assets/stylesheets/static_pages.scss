@@ -20,63 +20,109 @@ h6 {
   font-weight: 300;
 }
 
-.carousel-small-text{
-  color: #999;
-  font-weight: 300;
-}
-
-.education-title{
+.education-title {
   color: #999;
   font-weight: 300;
 }
 
 .jumbotron {
-  background: no-repeat center right fixed url(images/profile.jpg);
+  background: url(/assets/Slide1-af896cb13a4dda694db028f3d9fa5f4fbfbe5604c1da7addea37ddf0d9f16a77.jpg) no-repeat center right fixed;
   min-height: 630px;
 
   -webkit-background-size: auto;
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-  
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
-  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/profile.jpg');
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/profile.jpg');
-  
+
+  -ms-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Slide1.jpg');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/Slide1.jpg');
+
   margin-bottom: 0px;
   padding: 0px;
-}  
+}
 
-p.lead { text-align: center; color: #727878; }
-p.lead a { color: #FFFFFF; text-decoration: underline; }
-p.lead a:hover { text-decoration: none; }
-ul.no-bullets { list-style-type: none; margin: 0px; padding: 0px; }
-hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity=20); }
+p.lead {
+  text-align: center;
+  color: #727878;
+}
 
+p.lead a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
 
-.jumbotron .container { position: relative; top: 28%; z-index: 4; text-align: center; }
-.jumbotron .container > * { text-align: center; color: #FFFFFF; }
-.jumbotron .container h1 { padding-bottom: 20px; border-bottom: 1px solid #FFFFFF; border-bottom-color: rgba(255,255,255,0.35); display: inline-block; }
-.jumbotron .container .lead { font-size: 28px; }
-.jumbotron .scroll-down { height: 80px; width: 110px; display: block; position: absolute; bottom: 15px; right: 5%; background-color: #222222; text-align: center; z-index: 6; }
-.jumbotron .scroll-down .glyphicon { 
-  color: #FFFFFF; 
-  font-size: 30px; 
-  padding-right: 2px; 
-  padding-top: 20px; 
-  
+p.lead a:hover {
+  text-decoration: none;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+hr {
+  margin: 40px 0px;
+  border-color: #727878;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.jumbotron .container {
+  position: relative;
+  top: 28%;
+  z-index: 4;
+  text-align: center;
+}
+
+.jumbotron .container > * {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.jumbotron .container h1 {
+  border-bottom: 1px solid #FFFFFF;
+  border-bottom-color: rgba(255, 255, 255, 0.35);
+  display: inline-block;
+}
+
+.jumbotron .container .lead {
+  font-size: 28px;
+}
+
+.jumbotron .scroll-down {
+  height: 80px;
+  width: 110px;
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  right: 5%;
+  background-color: #222222;
+  text-align: center;
+  z-index: 6;
+}
+
+.jumbotron .scroll-down .glyphicon {
+  color: #FFFFFF;
+  font-size: 30px;
+  padding-right: 2px;
+  padding-top: 20px;
+
   animation-name: wiggle;
   animation-duration: 2.2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: normal;
-
 }
-.jumbotron .scroll-down:hover .glyphicon { padding-top: 35px; }
+
+.jumbotron .scroll-down:hover .glyphicon {
+  padding-top: 35px;
+}
 
 @keyframes wiggle {
   0% {
@@ -92,7 +138,7 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
   }
 }
 
-.ability-title{
+.ability-title {
   color: rgb(182, 36, 0);
   font-size: 15px;
 }
@@ -137,7 +183,6 @@ a {
   box-shadow: none;
 }
 
-
 a:hover,
 a:focus {
   color: #80c9f1;
@@ -155,23 +200,23 @@ a:focus {
 }
 
 #Profile {
-  padding-top: 70px; 
+  padding-top: 70px;
 }
 
 #Experiences {
-  padding-top: 70px; 
+  padding-top: 70px;
 }
 
 #Abilities {
-  padding-top: 70px; 
+  padding-top: 70px;
 }
 
 #Projects {
-  padding-top: 70px; 
+  padding-top: 70px;
 }
 
 #Contact {
-  padding-top: 70px; 
+  padding-top: 70px;
 }
 
 #main-slider {
@@ -475,7 +520,6 @@ a:focus {
   display: inline-block;
 }
 
-
 .navbar-default .navbar-nav > li.active > a,
 .navbar-default .navbar-nav > li.active:focus > a,
 .navbar-default .navbar-nav > li.active:hover > a,
@@ -489,7 +533,6 @@ a:focus {
   background-color: rgb(182, 36, 0) !important;
   color: #fff;
 }
-
 
 .icon-lg {
   font-size: 48px;
@@ -619,7 +662,6 @@ textarea#message {
   }
 }
 
-
 figure.effect {
   color: #FFF;
 }
@@ -629,16 +671,16 @@ figure.effect img {
   width: calc(100% + 20px);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-10px,0,0);
-  transform: translate3d(-10px,0,0);
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 figure.effect:hover img {
   opacity: 0.2;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 figure.effect figcaption {
@@ -668,13 +710,13 @@ figure.effect h3::after {
   content: '';
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
-  -webkit-transform: translate3d(-100%,0,0);
-  transform: translate3d(-100%,0,0);
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
 }
 
 figure.effect:hover h3::after {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 figure.effect p {
@@ -682,12 +724,12 @@ figure.effect p {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
 }
 
 figure.effect:hover p {
   opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
