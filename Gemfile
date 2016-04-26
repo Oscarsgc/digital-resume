@@ -26,7 +26,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass'
-gem 'twitter-bootstrap-rails'
 
 gem 'paperclip'
 gem 'aws-sdk', '< 2.0'
