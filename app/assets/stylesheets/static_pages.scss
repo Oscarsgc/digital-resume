@@ -7,9 +7,9 @@
 
 body {
   background: #e5e5e5;
-  color: #999;
+  background-image: url(bg.png);
+  color: #ffffff;
 }
-
 
 h1,
 h2,
@@ -23,7 +23,7 @@ h6 {
 }
 
 .education-title {
-  color: #999;
+  color: #ffffff;
   font-weight: 300;
 }
 
@@ -36,7 +36,6 @@ h6 {
   background-size: cover;
   overflow: hidden;
 }
-
 
 /*.jumbotron {
 
@@ -64,7 +63,7 @@ h6 {
 
 p.lead {
   text-align: center;
-  color: #727878;
+  color: #ffffff;
 }
 
 p.lead a {
@@ -176,7 +175,7 @@ a {
   position: absolute;
   top: 50px;
   width: 96.66666666666666%;
-  color: #FFF;
+  color: #ffffff;
   z-index: 2;
 }
 
@@ -217,30 +216,22 @@ a:focus {
 }
 
 #Profile {
-  background-color: white;
   padding-top: 70px;
-  min-height: 630px;
-
 }
 
 #Experiences {
   padding-top: 70px;
-  min-height: 630px;
 }
 
 #Abilities {
-  background-color: white;
   padding-top: 70px;
-  min-height: 630px;
 }
 
 #Projects {
   padding-top: 70px;
-  min-height: 630px;
 }
 
 #Contact {
-  background-color: white;
   padding-top: 70px;
 }
 
@@ -250,7 +241,7 @@ a:focus {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   padding: 175px 0;
-  color: #fff;
+  color: #ffffff;
 }
 
 #main-slider .item {
@@ -323,7 +314,7 @@ a:focus {
 #main-slider h1 {
   font-size: 68px;
   text-shadow: 0 3px rgba(0, 0, 0, 0.1);
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Start: Recommended Isotope styles */
@@ -597,11 +588,11 @@ a:focus {
 #footer {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #999;
+  color: #ffffff;
 }
 
 #footer a {
-  color: #999;
+  color: #ffffff;
 }
 
 #footer a:hover {
