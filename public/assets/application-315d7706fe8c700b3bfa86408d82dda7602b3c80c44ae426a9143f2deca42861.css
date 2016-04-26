@@ -10908,7 +10908,7 @@ h6 {
 
 /* line 28, /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets/static_pages.scss */
 .jumbotron {
-  background: url("slide1.jpg") no-repeat center right fixed;
+  background: url("slide.jpg") no-repeat center right fixed;
   min-height: 630px;
   -webkit-background-size: auto;
   -moz-background-size: 100%;
