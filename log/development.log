@@ -36529,3 +36529,58 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/bootstrap.self-d0e973a52d36a01036265aeefaf2d1ae3499d2cb231a9be3bd846432daf231de.js?body=1" for ::1 at 2016-04-24 20:58:23 -0400
+
+
+Started GET "/" for ::1 at 2016-04-25 21:03:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#index as HTML
+  [1m[35mAbility Load (0.5ms)[0m  SELECT "abilities".* FROM "abilities"
+  [1m[36mEducation Load (0.4ms)[0m  [1mSELECT "educations".* FROM "educations"[0m
+  [1m[35mLanguage Load (0.4ms)[0m  SELECT "languages".* FROM "languages"
+DEPRECATION WARNING: [paperclip] [deprecation] AWS SDK v1 has been deprecated in paperclip 5. Please consider upgrading to AWS 2 before upgrading paperclip. (called from <class:Project> at /Users/oscar_sgc/RubymineProjects/myBlog/app/models/project.rb:2)
+  [1m[36mProject Load (0.6ms)[0m  [1mSELECT "projects".* FROM "projects"[0m
+  [1m[35mTool Load (0.4ms)[0m  SELECT "tools".* FROM "tools"
+  [1m[36mWork Load (0.1ms)[0m  [1mSELECT "works".* FROM "works"[0m
+  Rendered static_pages/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 1787ms (ActiveRecord: 4.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: twitter/bootstrap/bootstrap.
+Load paths:
+  /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/images
+  /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/javascripts
+  /Users/oscar_sgc/RubymineProjects/myBlog/app/assets/stylesheets
+  /Users/oscar_sgc/RubymineProjects/myBlog/vendor/assets/javascripts
+  /Users/oscar_sgc/RubymineProjects/myBlog/vendor/assets/stylesheets
+  /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/turbolinks-2.5.3/lib/assets/javascripts
+  /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/jquery-rails-4.1.1/vendor/assets/javascripts
+  /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/font-awesome-rails-4.5.0.0/app/assets/fonts
+  /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/font-awesome-rails-4.5.0.0/app/assets/stylesheets
+  /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets
+  /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/javascripts
+  /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/fonts
+  /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/images
+  /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets):
+    2: <html>
+    3: <head>
+    4:   <title>Oscar González</title>
+    5:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <%= render 'layouts/shim' %>
+  app/assets/stylesheets/static_pages.scss:8
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__3037573380863017431_70336840246220'
+
+
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.9ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (87.1ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/oscar_sgc/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (153.2ms)
