@@ -1,25 +1,33 @@
-<section id="main-slider">
-  <div id="top" class="jumbotron">
-    <div class="container">
-      <h1>Oscar González</h1>
-      <p class="lead">Interactive resume</p>
-    </div>
-    <div class="overlay"></div>
-    <a class="scroll-down" href="#Profile">
-      <span class="glyphicon glyphicon-chevron-down"></span>
-    </a>
-  </div>
-</section>
-
-
-<section id="Profile">
+<header>
   <div class="container">
-    <h1 class="center">Profile</h1>
-    <p class="center">I&#039;m a Software Developer</p>
-    <hr>
     <div class="row">
-      <div class="col-md-4">
-        <h3><i class="fa fa-male"> &nbsp;About me</i></h3>
+      <div class="col-lg-12">
+        <img class="img-circle" src="images/profile.jpg" alt="Oscar González" width="256" height="256"/>
+        <div class="intro-text">
+          <span class="name">Oscar González</span>
+          <hr class="star-light">
+          <span class="skills">Software Engineer - Web Developer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="success" id="Profile">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Profile</h2>
+        <hr class="star-primary">
+        <h3 style="font-style: italic">
+          <center>I&#039;m a Software Developer</center>
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-2">
+        <h3><i class="fa fa-male"> About me:</i></h3>
         <p>
           I'm a responsible person that likes to work under pressure. I have experience developing web applications, web
           sites and desktop systems.
@@ -33,20 +41,22 @@
           technology or research area. I like working in a team and enjoy traveling, as well as all sorts of music.
         </p>
       </div>
-      <div class="col-md-4 text-center">
-        <img class="img-circle" src="images/profile.jpg" alt="Oscar González" width="256" height="288"/>
-      </div>
-      <div class="col-md-4">
-        <h3>Details:</h3>
+
+      <div class="col-lg-4 col-lg-offset-1">
+        <h3><i class="fa fa-sticky-note"> Details:</i></h3>
         <p>
-          <strong>Name:</strong><br/>
+          <strong>Full Name:</strong><br/>
           Oscar Sergio González Camacho<br/>
+        </p>
+        <p>
           <strong>Age:</strong><br/>
           23 years<br/>
+        </p>
+        <p>
           <strong>Location:</strong><br/>
           Cochabamba, Bolivia
         </p>
-
+        <br><br>
         <a href="https://twitter.com/Oscar_sgc" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow
           @Oscar_sgc</a>
         <script>!function (d, s, id) {
@@ -60,97 +70,104 @@
         }(document, 'script', 'twitter-wjs');</script>
       </div>
     </div>
-  </div><!--/.container-->
-</section><!--/#services-->
+  </div>
+</section>
 
 
-<section id="Experiences">
+
+<section class="magic" id="Experiences">
   <div class="container">
-    <h1 class="center">Experience</h1>
-    <hr>
-    <h2><i class="fa fa-graduation-cap">&nbsp;Education</i></h2>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Experience</h2>
+        <hr class="star-light">
+      </div>
+    </div>
+    <h3><i class="fa fa-graduation-cap"> Education:</i></h3>
     <br>
     <% @educations.each do |education| %>
-        <div class="experiences">
-          <div class="experience row">
-            <div class="col-md-4">
-              <h4><%= education.title %></h4>
-              <p class="experience-period">
-                <%= education.start.year.to_s + '-' +
-                        if education.currently
-                          'current'
-                        else
-                          education.finish.year.to_s
-                        end %>
-              </p>
+        <div class="row">
+          <div class="col-md-4">
+            <h4><strong><%= education.title %></strong></h4>
+            <p class="experience-period">
+              <%= education.start.year.to_s + '-' +
+                      if education.currently
+                        'current'
+                      else
+                        education.finish.year.to_s
+                      end %>
+            </p>
               <span class="location">
                     <span class="glyphicon glyphicon-map-marker"></span>
                 <%= education.location %>
-                  </span>
-            </div>
-            <div class="col-md-8">
-              <p>
-                <strong><%= education.degree %></strong>
-                <br><br>
+              </span>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong><%= education.degree %></strong>
+              <br><br>
 				        <span class="experience-details">
                   <%= education.description %>  
                 </span>
-              </p>
-            </div>
+            </p>
           </div>
         </div>
         <br>
     <% end %>
-    <h2><i class="fa fa-briefcase">&nbsp;Career</i></h2>
+    <h3><i class="fa fa-briefcase"> Career:</i></h3>
     <% @works.each do |work| %>
-        <div class="experiences">
-          <div class="experience row">
-            <div class="col-md-4">
-              <h4><%= work.title %></h4>
-              <p class="experience-period">
-                <%= work.start.strftime("%B") + " " + work.start.year.to_s + ' - ' +
-                        if work.currently
-                          'current'
-                        else
-                          work.finish.strftime("%B") + " " + work.finish.year.to_s
-                        end %>
-              </p>
-               <span class="location">
-                    <span class="glyphicon glyphicon-map-marker"></span>
-                 <%= work.location %>
-                 <br>
-                 <% if work.link != '' %>
-                   <i class="fa fa-link"><a href="<%= work.link %>">&nbsp;<%= work.title %></a></i>
-                   <% end %>
-                </span>
-            </div>
-            <div class="col-md-8">
-              <p>
-                <strong><%= work.role %></strong><br><br>
+        <div class="row">
+          <div class="col-md-4">
+            <h4><strong><%= work.title %></strong></h4>
+            <p>
+              <%= work.start.strftime("%B") + " " + work.start.year.to_s + ' - ' +
+                      if work.currently
+                        'current'
+                      else
+                        work.finish.strftime("%B") + " " + work.finish.year.to_s
+                      end %>
+            </p>
+            <p>
+              <span class="glyphicon glyphicon-map-marker"></span>
+              <%= work.location %>
+            </p>
+            <p>
+              <% if work.link != '' %>
+                  <span class="fa fa-link"></span><a href="<%= work.link %>"> <%= work.title %></a>
+              <% end %>
+            </p>
+          </div>
+          <div class="col-md-8">
+            <p>
+              <strong><%= work.role %></strong><br><br>
 				        <span class="experience-details">
 					       <%= work.description %>
 				        </span>
-              </p>
-            </div>
+            </p>
           </div>
         </div>
+        <br>
     <% end %>
   </div>
-</section><!--/#portfolio-->
+</section>
 
 
-<section id="Abilities">
+<section class="success" id="Abilities">
   <div class="container">
-    <h1 class="center">Abilities</h1>
-    <hr>
-    <h2><i class="fa fa-code">&nbsp;Skills</i></h2>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Abilities</h2>
+        <hr class="star-primary">
+      </div>
+    </div>
+    <h3><i class="fa fa-code"> Skills:</i></h3>
     <br>
     <div class="row">
       <div class="col-md-6">
         <ul class="no-bullets">
           <% @abilities.each do |ability| %>
               <li>
-                <span class="ability-title"><%= ability.name %></span>
+                <span><%= ability.name %></span>
 				        <span class="ability-score">
                   &nbsp;
                   <% for i in 1..ability.rating %>
@@ -167,18 +184,19 @@
               <% end %>
           <% end %>
           </ul>
-          </div>
-          </div>
-    <br><br>
-    <div class="text-center project-referal">
-      <p>Current Website has been developed using Ruby On Rails.</p>
-      <a href="https://github.com/oscarsgc/..." class="btn btn-primary" target="_blank">See project on
-        Github</a>
+    </div>
     </div>
 
-    <hr>
-
-    <h2><i class="fa fa-language" aria-hidden="true">&nbsp;Languages</i></h2>
+    <div class="text-center project-referal">
+      <p>Current Website has been developed using Ruby On Rails.</p>
+      <a style="color: #FBFFFE" href="https://github.com/Oscarsgc/digital-resume" class="btn btn-primary" target="_blank">See
+        project on
+        Github</a>
+    </div>
+    <br>
+    <br>
+    <hr class="star-primary">
+    <h3><i class="fa fa-language" aria-hidden="true"> Languages:</i></h3>
     <br>
     <div class="row">
       <div class="col-md-6">
@@ -198,10 +216,8 @@
         </ul>
       </div>
     </div>
-
-    <hr>
-
-    <h2><i class="fa fa-wrench">&nbsp;Tools</i></h2>
+    <hr class="star-primary">
+    <h3><i class="fa fa-wrench"> Tools:</i></h3>
     <br>
     <div class="row">
       <div class="col-md-6">
@@ -223,13 +239,17 @@
         </ul>
       </div>
     </div>
-  </div><!--/.container-->
-</section><!--/#about-us-->
+  </div>
+</section>
 
-<section id="Projects">
+<section class="magic" id="Projects">
   <div class="container">
-    <h1 class="center">Projects</h1>
-    <hr>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Projects</h2>
+        <hr class="star-light">
+      </div>
+    </div>
     <div class="row">
       <% @projects.each do |project| %>
           <div class="col-md-6 col-sm-12 col-xs-12">
@@ -247,46 +267,14 @@
           </div>
       <% end %>
     </div>
-  </div><!--/.container-->
-</section><!--/ #about-us-->
+  </div>
+</section>
 
-<section id="Contact">
-
-  <div class="container">
-    <h1 class="center">Contact</h1>
-    <hr>
-    <div class="row">
-      <div class="col-md-6">
-        <ul class="no-bullets">
-          <font size="3">
-            <li>
-              <a href="https://twitter.com/Oscar_sgc" target="_blank">
-                <span class="fa fa-twitter" aria-hidden="true"></span>
-                @Oscar_sgc
-              </a>
-            </li>
-            <li>
-              <a href="https://bo.linkedin.com/in/ogonzalezc" style="text-decoration:none;">
-              <span>
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                &nbsp;Oscar González
-              </span>
-              </a>
-            </li>
-            <li>
-              <a href="mailto: oscar_sgc@icloud.com">
-                <span class="fa fa-envelope" aria-hidden="true"></span>
-					<span>
-						oscar_sgc@icloud.com
-					</span>
-              </a>
-            </li>
-          </font>
-        </ul>
-      </div>
-    </div>
-  </div><!--/.container-->
-</section><!--/ #contact-->
+<div class="scroll-top page-scroll visible-xs visible-sm">
+  <a class="btn btn-primary" href="#page-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+</div>
 
 
 <script type="text/javascript">
